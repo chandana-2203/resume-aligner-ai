@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "hono": "npm:hono@^4.0.0",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.39.0",
+    "@google/generative-ai": "npm:@google/generative-ai@^0.21.0"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch server/index.tsx"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "dom", "dom.iterable"],
+    "strict": true
+  }
+}
